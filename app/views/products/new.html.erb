@@ -28,7 +28,7 @@
 
       var products = $.product('/products', values);
 
-      product.done(function(data) {
+      products.done(function(data) {
         var product = data;
         $("#productTitle").text(product["title"]);
         $("#productBody").text(product["description"]);
