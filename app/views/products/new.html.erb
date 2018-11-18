@@ -31,7 +31,11 @@
       var products = $.post('/products', values);
 
       products.done(function(data) {
-
+        var product = data;
+        $("#productName").text(product["name"]);
+        $("#productDescription").text(product["description"]);
+        $("#productPrice").text(product["price"]);
+        $("#productInventory").text(product["inventory"]);
         console.log(data);
       });
     });
