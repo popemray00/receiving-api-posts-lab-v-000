@@ -16,7 +16,9 @@
 
 <div id="productResult">
   <h2 id="productName"></h2>
-  <p id="productBody"></p>
+  <p id="productDescription"></p>
+  <p id="productPrice"></p>
+  <p id="productInventory"></p>
 </div>
 
 <script type="text/javascript" charset="utf-8">
@@ -31,7 +33,9 @@
       products.done(function(data) {
         var product = data;
         $("#productName").text(product["name"]);
-        $("#productBody").text(product["description"]);
+        $("#productDescription").text(product["description"]);
+        $("#productPrice").text(product["price"]);
+        $("#productInventory").text(product["inventory"]);
       });
     });
   });
