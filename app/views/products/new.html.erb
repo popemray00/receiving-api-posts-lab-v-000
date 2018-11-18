@@ -29,7 +29,8 @@
       var products = $.product('/products', values);
 
       products.done(function(data) {
-        
+        $("#productTitle").text(product["title"]);
+        $("#productBody").text(product["description"]);
       });
     });
   });
