@@ -14,6 +14,11 @@
   <%= f.submit "submit" %>
 <% end %>
 
+<div id="productResult">
+  <h2 id="productTitle"></h2>
+  <p id="productBody"></p>
+</div>
+
 <script type="text/javascript" charset="utf-8">
   $(function () {
     $('form').submit(function(event) {
@@ -24,7 +29,7 @@
       var products = $.product('/products', values);
 
       products.done(function(data) {
-
+        
       });
     });
   });
