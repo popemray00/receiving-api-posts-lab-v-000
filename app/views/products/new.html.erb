@@ -15,7 +15,7 @@
 <% end %>
 
 <div id="productResult">
-  <h2 id="productTitle"></h2>
+  <h2 id="productName"></h2>
   <p id="productBody"></p>
 </div>
 
@@ -30,7 +30,7 @@
 
       products.done(function(data) {
         var product = data;
-        $("#productTitle").text(product["title"]);
+        $("#productName").text(product["name"]);
         $("#productBody").text(product["description"]);
       });
     });
