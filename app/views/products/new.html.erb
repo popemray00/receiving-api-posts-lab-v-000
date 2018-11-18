@@ -20,11 +20,11 @@
       event.preventDefault();
 
       var values = $(this).serialize();
-      
+
       var products = $.product('/products', values);
 
       products.done(function(data) {
-        
+
       });
     });
   });
