@@ -28,7 +28,7 @@
 
       var values = $(this).serialize();
 
-      var products = $.product('/products', values);
+      var products = $.post('/products', values);
 
       products.done(function(data) {
         var product = data;
