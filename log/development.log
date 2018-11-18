@@ -1744,3 +1744,18 @@ Cannot render console from 173.241.164.96! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.241.164.96 at 2018-11-18 17:32:14 +0000
 Cannot render console from 173.241.164.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/products/new" for 173.241.164.96 at 2018-11-18 17:39:19 +0000
+Cannot render console from 173.241.164.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (630.1ms)
+Completed 200 OK in 850ms (Views: 825.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 173.241.164.96 at 2018-11-18 17:39:52 +0000
+Cannot render console from 173.241.164.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
